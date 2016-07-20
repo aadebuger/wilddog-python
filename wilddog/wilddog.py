@@ -197,7 +197,7 @@ class WilddogApplication(object):
     HEADERS = {'typ': 'JWT', 'alg': 'HS256'}
 
     def __init__(self, dsn, authentication=None):
-        assert dsn.startswith('https://'), 'DSN must be a secure URL'
+#        assert dsn.startswith('https://'), 'DSN must be a secure URL'
         self.token = None
         self.dsn = dsn
         self.authentication = authentication
